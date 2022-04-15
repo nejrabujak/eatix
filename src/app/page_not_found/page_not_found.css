@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+.container p, h1{
+  margin: 10px;
+}
+
+.example-button-row button {
+  background-color: lightgreen;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+
