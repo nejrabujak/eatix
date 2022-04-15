@@ -6,12 +6,13 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {PageNotFound} from './page_not_found/page_not_found';
 import {MatButtonModule} from '@angular/material/button';
-
+import {Contact_us} from "./contact_us/contact_us";
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFound
+    PageNotFound,
+    Contact_us
   ],
   imports: [
     BrowserModule,

@@ -5,8 +5,8 @@ import {ɵgetDOM} from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './page_not_found/page_not_found.html', //will be changed when routs are added
-  styleUrls: ['./page_not_found/page_not_found.css'] //will be changed when routs are added
+  templateUrl: './contact_us/contact_us.html', //will be changed when routs are added
+  styleUrls: ['./contact_us/contact_us.css'] //will be changed when routs are added
 })
 export class AppComponent {
   title = 'application';
