@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
-import {ɵgetDOM} from '@angular/common';
-
-
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './homepage/app.component.html',
-  styleUrls: ['./homepage/app.component.css']
+  templateUrl: './aboutus2/app.component.html',
+  styleUrls: ['./aboutus2/app.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
-  title = 'application';
+
 }
