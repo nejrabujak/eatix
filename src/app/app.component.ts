@@ -6,6 +6,4 @@ import {ChangeDetectionStrategy, Component} from '@angular/core';
   styleUrls: ['./aboutus2/app.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
-
-}
+export class AppComponent {}
