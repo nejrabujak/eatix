@@ -6,6 +6,7 @@ import {Contact_us} from "./contact_us/contact_us";
 import {AboutusComponent} from "./aboutus/aboutus.component";
 import {TypeComponent} from "./product_types/type.component";
 import {ProductComponent} from "./product/product.component";
+import {NewproductComponent} from "./newproduct/newproduct.component";
 
 
 
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'about', component: AboutusComponent },
   { path: 'type', component: TypeComponent },
   { path: 'products', component: ProductComponent },
+  { path: 'newproduct', component: NewproductComponent },
 
 
 ];

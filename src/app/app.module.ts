@@ -15,6 +15,7 @@ import {FooterComponent} from "./footer/footer.component";
 import {TypeComponent} from "./product_types/type.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {ProductComponent} from "./product/product.component";
+import {NewproductComponent} from "./newproduct/newproduct.component";
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {ProductComponent} from "./product/product.component";
     AboutusComponent,
     HomepageComponent,
     LoginComponent,
-    ProductComponent
+    ProductComponent,
+    NewproductComponent
   ],
   imports: [
     BrowserModule,
