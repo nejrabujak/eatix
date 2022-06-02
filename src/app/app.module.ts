@@ -7,21 +7,26 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {PageNotFound} from './page_not_found/page_not_found';
 import {MatButtonModule} from '@angular/material/button';
 import {Contact_us} from './contact_us/contact_us';
-import {Homepage} from './aboutus2/app.component';
-import {AboutUs} from './aboutus/app.component';
+import {AboutusComponent} from './aboutus/aboutus.component';
+import {LoginComponent} from './login/login.component';
 import {HeaderComponent} from "./header/header.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {FooterComponent} from "./footer/footer.component";
+import {TypeComponent} from "./product_types/type.component";
+import {HomepageComponent} from "./homepage/homepage.component";
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFound,
     Contact_us,
-    Homepage,
-    AboutUs,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TypeComponent,
+    AboutusComponent,
+    HomepageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

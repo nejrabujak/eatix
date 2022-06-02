@@ -6,7 +6,7 @@ box-sizing:border-box;
 
 }
 .hero{
-height: 100vh;
+height: 138vh;
 width:100%;
 background-image: url("https://i.pinimg.com/736x/29/cd/b7/29cdb7dd542263b3def50c0652127593.jpg");
 background-size:cover;
@@ -117,6 +117,7 @@ padding:14px 130px 14px 78px;
 border:2px solid #darkgreen;
 outline:none;
 border-radius:30px;
+
 
 }
 
