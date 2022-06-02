@@ -14,6 +14,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import {FooterComponent} from "./footer/footer.component";
 import {TypeComponent} from "./product_types/type.component";
 import {HomepageComponent} from "./homepage/homepage.component";
+import {ProductComponent} from "./product/product.component";
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {HomepageComponent} from "./homepage/homepage.component";
     TypeComponent,
     AboutusComponent,
     HomepageComponent,
-    LoginComponent
+    LoginComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
