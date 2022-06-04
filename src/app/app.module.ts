@@ -16,6 +16,8 @@ import {TypeComponent} from "./product_types/type.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {ProductComponent} from "./product/product.component";
 import {NewproductComponent} from "./newproduct/newproduct.component";
+import {User_storeComponent} from "./store_user/user_store";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import {NewproductComponent} from "./newproduct/newproduct.component";
     HomepageComponent,
     LoginComponent,
     ProductComponent,
-    NewproductComponent
+    NewproductComponent,
+    User_storeComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import {NewproductComponent} from "./newproduct/newproduct.component";
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
