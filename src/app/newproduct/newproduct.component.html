@@ -2,36 +2,21 @@
 <body>
 <div class ="main">
   <h1>Dodaj novi proizvod</h1>
-  <div class="addItem">
-  <input placeholder="Naziv atrikla" type="text" [(ngModel)]="name" class="addText">
-    <input placeholder="Datum artikla" type="text" [(ngModel)]="proizvod" class="addText">
-    <input placeholder="Cijena artikla" type="text" [(ngModel)]="cijena" class="addText">
+
+    <div class="addItem">
+      <input placeholder="Naziv artikla" type="text" [(ngModel)]="name" class="addText">
+      <input placeholder="Vrsta atrikla" type="text" [(ngModel)]="type" class="addText">
+    <input placeholder="Datum artikla" type="text" [(ngModel)]="expiring_date" class="addText">
+    <input placeholder="Cijena artikla" type="text" [(ngModel)]="price" class="addText">
     <p>{{name}}</p>
-    <p>{{proizvod}}</p>
-    <p>{{cijena}}</p>
+    <p>{{type}}</p>
+    <p>{{expiring_date}}</p>
+    <p>{{price}}</p>
 
-  <button>Dodaj</button>
+    <button type="submit" class="btn btn-success">Dodaj</button>
 
 </div>
-
-
-  <ul>
-
-    <li>Dodani proizvod
-
-      <span>x</span>
-    </li>
-
-
-
-  </ul>
 </div>
-
-
-
-
-
-
 
 </body>
 
