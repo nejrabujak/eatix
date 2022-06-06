@@ -17,32 +17,6 @@ margin-top:0px;
 
 }
 
-ul{
-
-list-style:none;
-font-size:20px;
-color:#686868;
-margin-left:-32px;
-margin-bottom:0px;
-}
-
-li{
-border-bottom: 1px solid #ededed;
-background-color: #f4f4f4;
-padding:10px 0px;
-margin-bottom:5px;
-
-}
-
-li span{
-
-cursor:pointer;
-position:relative;
-float:right;
-margin-right:10px;
-
-}
-
 .addItem{
 
 position:relative;
@@ -58,11 +32,10 @@ height:35px;
 
 }
 
-.addItem button{
+button btn{
 
 height:35px;
 width:60px;
-
 }
 
 

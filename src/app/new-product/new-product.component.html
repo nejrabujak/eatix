@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+<form [formGroup]="form" (ngSubmit)="submit()" xmlns="http://www.w3.org/1999/html">
+
+<div class="readersack">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <br><br> <h3>Add new product</h3>
+
+          <div class="form-group">
+            <p>Name of the product</p>
+            <input type="text" class="form-control" id="name" [formControlName]="productProperty.name" name="name">
+
+            <br> <p>Type of the product </p>
+            <input type="text" class="form-control" id="type" [formControlName]="productProperty.type" name="type">
+
+            <br> <p>Expiring date </p>
+            <input type="text" class="form-control" id="expiring_date" [formControlName]="productProperty.expiring_date" name="expiring_date">
+
+            <br> <p>Price </p>
+            <input type="text" class="form-control" id="price" [formControlName]="productProperty.price" name="price">
+
+            <br> <br> <div class="form-group">
+            <button class="btn btn-success">Add new product</button> </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</form>

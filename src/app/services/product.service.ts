@@ -7,7 +7,8 @@ import {environment} from '../../environments/environment';
 @Injectable()
 export class ProductService {
 
-  private readonly baseUrl: string = `${environment.backendUrl}/newproduct`;
+  private readonly baseUrl: string = `${environment.backendUrl}/product`;
+  httpClient: any;
 
   constructor(private http:HttpClient) {
   }
@@ -16,16 +17,13 @@ export class ProductService {
     return this.http.get<Product[]>(this.baseUrl);
   }
 
+
   public getProduct(id:string): Observable<Product> {
     return this.http.get<Product>(`${this.baseUrl}/${id}`);
   }
 
   public create(product:Product): Observable<Product> {
     return this.http.post<Product>(`${this.baseUrl}`, product);
-  }
-
-  public update(id:string, product:Product): Observable<Product> {
-    return this.http.put<Product>(`${this.baseUrl}/${id}`, product);
   }
 
   public delete(id:string): Observable<void> {

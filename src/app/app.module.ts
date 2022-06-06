@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -15,9 +16,23 @@ import {FooterComponent} from "./footer/footer.component";
 import {TypeComponent} from "./product_types/type.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {ProductComponent} from "./product/product.component";
-import {NewproductComponent} from "./newproduct/newproduct.component";
-import {User_storeComponent} from "./store_user/user_store";
+import {StoreUserComponent} from "./store_user/store_user";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {ProductService} from "./services/product.service"
+import {HttpClientModule} from "@angular/common/http";
+import {MatTableModule} from "@angular/material/table";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {NewProductComponent} from "./new-product/new-product.component";
+import {MatIconModule} from "@angular/material/icon";
+import {NewProductContainerComponent} from "./containers/new-product-form-container/new-product-container.component";
+import {AdminComponent} from "./admin/admin";
+import {ProductListContainerComponent} from "./containers/product-list-container/product-list-container.component";
+import {StoreListContainerComponent} from "./containers/store-list-container/store-list-container.component";
+import {UserListContainerComponent} from "./containers/user-list-container/user-list-container.component";
+import {UserService} from "./services/user.service";
+import {StoreService} from "./services/store.service";
+import {ChooseComponent} from "./choose/choose.component";
 
 
 @NgModule({
@@ -32,8 +47,14 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     HomepageComponent,
     LoginComponent,
     ProductComponent,
-    NewproductComponent,
-    User_storeComponent,
+    StoreUserComponent,
+    NewProductComponent,
+    NewProductContainerComponent,
+    ProductListContainerComponent,
+    StoreListContainerComponent,
+    UserListContainerComponent,
+    AdminComponent,
+    ChooseComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,9 +63,18 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     ReactiveFormsModule,
     MatButtonModule,
     AppRoutingModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    HttpClientModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule
   ],
-  providers: [],
+  providers: [
+    ProductService,
+    UserService,
+    StoreService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
