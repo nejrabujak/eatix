@@ -1,23 +1,51 @@
-<div class="container">
-  <ng-container>
-    <div>
-      <div class="settings-container">
+<ng-container *ngIf="products && products.length > 0; else emptyList">
+<div class="container" *ngFor="let product of products">
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name of the product</th>
+      <th>Type of the product</th>
+      <th>Expiring date</th>
+      <th>Price</th>
+      <th>Operation</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><span><mat-icon>{{getProductId(product)}}</mat-icon> {{product.id}}</span></td>
+      <td><span><mat-icon>{{getProductName(product)}}</mat-icon> {{product.name}}</span></td>
+      <td><span><mat-icon>{{getProductType(product)}}</mat-icon> {{product.type}}</span></td>
+      <td><span><mat-icon>{{getProductExpiringDate(product)}}</mat-icon> {{product.expiring_date}}</span></td>
+      <td><span><mat-icon>{{getProductPrice(product)}}</mat-icon> {{product.price}}</span></td>
+      <td><span><button mat-button color="warn"
+                        class="remove-button"
+                        *ngIf="removeAllowed"
+                        (click)="remove(product)">Delete</button></span></td>
 
-        <button mat-flat-button type="button"
-                class="remove-button">
-        Izbrisi
-        </button>
-
-        <button mat-flat-button type="button"
-                class="edit-button">
-          Edituj
-        </button>
-      </div>
+    </tr>
+    </tbody>
+  </table>
       <hr/>
-    </div>
-    <input type="submit" name="submit" value="Dodaj novi proizvod" routerLink="/new-product" routerLinkActive="active">;
 
+    <button mat-flat-button type="button"
+            class="addItem"
+            routerLink="/new-product" routerLinkActive="active">
+      Add new product
+    </button>
 
-  </ng-container>
 </div>
+</ng-container>
+
+<ng-template #emptyList>
+  <div>
+    <h3>There are no items.</h3>
+  </div>
+  <button mat-flat-button type="button"
+          class="addItem"
+          routerLink="/new-product" routerLinkActive="active">
+    Add new product
+  </button>
+</ng-template>
+
 
