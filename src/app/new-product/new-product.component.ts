@@ -2,7 +2,6 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Product} from '../models/product';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {ProductProperty} from '../models/ProductProperty';
-import {CurrencyPipe} from "@angular/common";
 
 @Component({
   selector: 'app-new-product',
@@ -46,8 +45,6 @@ export class NewProductComponent implements OnInit {
 
     this.resetForm();
   }
-
-
 
   private resetForm(): void {
     this.form.reset();
