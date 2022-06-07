@@ -1,9 +1,10 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, EventEmitter, OnInit} from "@angular/core";
 import {ActivatedRoute, Router} from "@angular/router";
 import {ResolverResponse} from "../../constaints/resolver-response.constaints";
 import {Route} from "../../constaints/route.constants";
 import {Product} from "../../models/product";
 import {ProductService} from "../../services/product.service";
+import {ProductProperty} from "../../models/ProductProperty";
 
 
 @Component({
@@ -32,10 +33,8 @@ export class NewProductContainerComponent implements OnInit {
   }
 
   saveProduct(product: Product): void {
-      this.productService.create(product).subscribe(value => {
+      this.productService.create(product).subscribe(() => {
         this.router.navigate([Route.PRODUCTS]);
       });
-
   }
-
 }
