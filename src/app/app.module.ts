@@ -33,6 +33,10 @@ import {LoginComponent} from "./login/login.component";
 import {AuthService} from "./services/auth.service";
 import {AuthorizedGuard} from "./guards/authorized.guard";
 import {provideAuthorizationInterceptor} from "./interceptors/authorization.interceptor";
+import {NewProductContainerComponent} from "./containers/new-product-form-container/new-product-container.component";
+import {ProductListContainerComponent} from "./containers/product-list-container/product-list-container.component";
+import {StoreListContainerComponent} from "./containers/store-list-container/store-list-container.component";
+import {UserListContainerComponent} from "./containers/user-list-container/user-list-container.component";
 
 
 @NgModule({
@@ -51,7 +55,11 @@ import {provideAuthorizationInterceptor} from "./interceptors/authorization.inte
     NewProductComponent,
     AdminComponent,
     AdminUserComponent,
-    LoginComponent
+    LoginComponent,
+    NewProductContainerComponent,
+    ProductListContainerComponent,
+    StoreListContainerComponent,
+    UserListContainerComponent
   ],
   imports: [
     BrowserModule,
