@@ -1,0 +1,68 @@
+*{
+  padding:0;
+  margin:0;
+  font-family: 'Josefin Sans',  sans-serif;
+  box-sizing:border-box;
+
+}
+.hero{
+  height: 80vh;
+  width:100%;
+  background-image: url("https://i.pinimg.com/736x/29/cd/b7/29cdb7dd542263b3def50c0652127593.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+div #sign-in{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+
+.sign-in-form {
+  width: 350px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  background: lightgreen;
+  padding: 20px;
+  margin: auto 0;
+  text-align: center;
+}
+
+.sign-in-form input {
+  margin-bottom: 5px;
+}
+
+.sign-in-form .sign-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sign-in-form h1 {
+  color: darkgreen;
+  margin-bottom: 30px;
+}
+
+.sign-in-form .input-box {
+  padding: 10px;
+  margin: 10px 0px;
+  width: 80%;
+  border: 1px solid #999;
+  outline: none;
+  text-align: center;
+  border-radius: 20px;
+}
+.sign-in-form button {
+  background: darkgreen;
+  color: white;
+  width: 30%;
+  height: 50px;
+  border-radius: 20px;
+  font-size: 17px;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+
