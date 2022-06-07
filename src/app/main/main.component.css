@@ -111,10 +111,10 @@ position: relative;
 
 }
 .newslatter form input:first-child{
-display:inline-black;
+display:inline-block;
 
 padding:14px 130px 14px 78px;
-border:2px solid #darkgreen;
+border:2px solid darkgreen;
 outline:none;
 border-radius:30px;
 }

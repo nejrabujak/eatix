@@ -11,6 +11,7 @@ import {NewProductComponent} from "./new-product/new-product.component";
 import {Route} from "./constaints/route.constants";
 import {AdminComponent} from "./admin/admin";
 import {AdminUserComponent} from "./admin/admin-user";
+import {LoginComponent} from "./login/login.component";
 
 
 const routes: Routes = [
@@ -28,7 +29,7 @@ const routes: Routes = [
   { path: 'store', component: StoreUserComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'admin-user', component: AdminUserComponent },
-
+  {path: 'login', component: LoginComponent},
 
 
 ];

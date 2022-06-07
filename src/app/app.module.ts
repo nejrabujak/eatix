@@ -29,6 +29,10 @@ import {AdminComponent} from "./admin/admin";
 import {UserService} from "./services/user.service";
 import {StoreService} from "./services/store.service";
 import {AdminUserComponent} from "./admin/admin-user";
+import {LoginComponent} from "./login/login.component";
+import {AuthService} from "./services/auth.service";
+import {AuthorizedGuard} from "./guards/authorized.guard";
+import {provideAuthorizationInterceptor} from "./interceptors/authorization.interceptor";
 
 
 @NgModule({
@@ -46,7 +50,8 @@ import {AdminUserComponent} from "./admin/admin-user";
     StoreUserComponent,
     NewProductComponent,
     AdminComponent,
-    AdminUserComponent
+    AdminUserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -63,6 +68,9 @@ import {AdminUserComponent} from "./admin/admin-user";
     MatIconModule
   ],
   providers: [
+    provideAuthorizationInterceptor(),
+    AuthorizedGuard,
+    AuthService,
     ProductService,
     UserService,
     StoreService,
