@@ -1,6 +1,8 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Store} from "../models/store";
 import {StoreProperty} from "../models/StoreProperty";
+import {User} from "../models/user";
+import {UserProperty} from "../models/UserProperty";
 
 
 
@@ -12,9 +14,11 @@ import {StoreProperty} from "../models/StoreProperty";
 export class AdminComponent {
   @Input()
   stores: Store[] | null = [];
+  users: User[] | null = [];
 
   @Output()
   removeStore: EventEmitter<Store> = new EventEmitter<Store>()
+  removeUser: EventEmitter<User> = new EventEmitter<User>()
 
   public storeProperty = StoreProperty;
   public removeAllowed: boolean = false;

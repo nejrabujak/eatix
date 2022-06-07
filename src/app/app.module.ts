@@ -28,6 +28,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {AdminComponent} from "./admin/admin";
 import {UserService} from "./services/user.service";
 import {StoreService} from "./services/store.service";
+import {AdminUserComponent} from "./admin/admin-user";
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import {StoreService} from "./services/store.service";
     StoreUserComponent,
     NewProductComponent,
     AdminComponent,
+    AdminUserComponent
   ],
   imports: [
     BrowserModule,
