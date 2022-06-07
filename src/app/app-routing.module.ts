@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {LoginComponent} from './login/login.component';
+import {MainComponent} from './main/main.component';
 import {HomepageComponent} from "./homepage/homepage.component";
 import {Contact_us} from "./contact_us/contact_us";
 import {AboutusComponent} from "./aboutus/aboutus.component";
@@ -10,14 +10,13 @@ import {StoreUserComponent} from "./store_user/store_user";
 import {NewProductComponent} from "./new-product/new-product.component";
 import {Route} from "./constaints/route.constants";
 import {AdminComponent} from "./admin/admin";
-import {ChooseComponent} from "./choose/choose.component";
 
 
 const routes: Routes = [
 
   {
     path: Route.EMPTY,
-    component: LoginComponent
+    component: MainComponent
   },
   { path: 'homepage', component: HomepageComponent },
   { path: 'contact', component: Contact_us },
@@ -27,7 +26,6 @@ const routes: Routes = [
   { path: 'products', component: NewProductComponent },
   { path: 'store', component: StoreUserComponent },
   { path: 'admin', component: AdminComponent },
-  { path: 'choose', component: ChooseComponent },
 
 
 ];
