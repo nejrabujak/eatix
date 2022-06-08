@@ -35,7 +35,7 @@ export class StoreUserComponent {
   }
 
   getProductExpiringDate(product: Product) {
-    return product[ProductProperty.expiring_date];
+    return product[ProductProperty.expiringDate];
   }
 
   getProductPrice(product: Product) {

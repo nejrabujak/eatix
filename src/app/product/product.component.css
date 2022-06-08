@@ -1,12 +1,18 @@
 body {
+  margin: 0;
+  padding: 0;
+}
+.hero{
+  width:100%;
+  height: 100%;
   background-image: url("https://i.pinimg.com/736x/29/cd/b7/29cdb7dd542263b3def50c0652127593.jpg");
   background-size:cover;
   background-position:center;
 }
+
 .full {
   margin: 0 auto;
   width: 1100px;
-
 }
 
 main div {
@@ -16,9 +22,10 @@ main div {
 }
 section {
   margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  background-color: darkgreen;
+  background-color: lightgreen;
   color: white;
   width: 33%;
   height: 400px;
@@ -26,15 +33,18 @@ section {
   box-sizing: border-box;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }
-main h3 {
+main h3,p {
   text-align: center;
-  padding: 10px;
+  padding-top: 10px;
+  color: darkgreen;
 }
 main section img{
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
-
+main section p{
+  font-size: 30px;
+}
 main section div {
   padding: 20px 10px;
 }

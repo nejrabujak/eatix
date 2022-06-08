@@ -29,24 +29,26 @@ export class NewProductComponent implements OnInit {
       [ProductProperty.id]: [this.product?.[ProductProperty.id] || ''],
       [ProductProperty.name]: [this.product?.[ProductProperty.name] || ''],
       [ProductProperty.type]: [this.product?.[ProductProperty.type] || ''],
-      [ProductProperty.expiring_date]: [this.product?.[ProductProperty.expiring_date] || ''],
+      [ProductProperty.expiringDate]: [this.product?.[ProductProperty.expiringDate] || ''],
       [ProductProperty.price]: [this.product?.[ProductProperty.price] || ''],
 
     });
   }
 
+
   public submit(): void {
+    console.log(123);
     if (!this.form.valid) {
       return;
     }
-
+    console.log(123);
     this.saveProduct.emit(this.form.value);
-
-
     this.resetForm();
   }
 
   private resetForm(): void {
     this.form.reset();
   }
+
 }
+
