@@ -7,8 +7,8 @@ export class Store {
   [StoreProperty.email]?: string;
   [StoreProperty.password]?: string;
   [StoreProperty.address]?: string;
-  [StoreProperty.phone_number]?: string;
+  [StoreProperty.phoneNumber]?: string;
   [StoreProperty.city]?: string;
-  [StoreProperty.registration_id]?: string;
+  [StoreProperty.registrationId]?: string;
 
 }

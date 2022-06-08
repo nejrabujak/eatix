@@ -55,12 +55,9 @@ nav ul li a:hover{
   padding :10px 25px;
   border-radius:30px;
   transition:transform .4s;
-
-
 }
 
 .btn:hover{
-
   transform:scale(1.2);
 }
 
@@ -69,5 +66,4 @@ nav ul li a:hover{
   top:50%;
   left:8%;
   transforms: translateY(-50%);
-
 }

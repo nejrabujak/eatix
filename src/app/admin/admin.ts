@@ -3,6 +3,7 @@ import {Store} from "../models/store";
 import {StoreProperty} from "../models/StoreProperty";
 import {User} from "../models/user";
 import {UserProperty} from "../models/UserProperty";
+import {Product} from "../models/product";
 
 
 
@@ -18,9 +19,7 @@ export class AdminComponent {
 
   @Output()
   removeStore: EventEmitter<Store> = new EventEmitter<Store>()
-  removeUser: EventEmitter<User> = new EventEmitter<User>()
 
-  public storeProperty = StoreProperty;
   public removeAllowed: boolean = false;
 
   public remove(store: Store): void {
@@ -45,7 +44,7 @@ export class AdminComponent {
   }
 
   getStorePhoneNumber(store: Store) {
-    return store[StoreProperty.phone_number];
+    return store[StoreProperty.phoneNumber];
   }
 
   getStoreCity(store: Store) {
@@ -53,7 +52,7 @@ export class AdminComponent {
   }
 
   getStoreRegistrationID(store: Store) {
-    return store[StoreProperty.registration_id];
+    return store[StoreProperty.registrationId];
   }
 
 }

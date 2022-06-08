@@ -32,7 +32,7 @@ export class NewProductContainerComponent implements OnInit {
   }
 
 
-  saveProduct(product: Product): void {
+  handleSaveProduct(product: Product): void {
     if (this.isEditing) {
       this.productService.update(product[ProductProperty.id]!, product).subscribe(() => {
         this.router.navigate([Route.PRODUCTS]);

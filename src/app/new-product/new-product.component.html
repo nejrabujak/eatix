@@ -10,19 +10,20 @@
 
           <div class="form-group">
             <p>Name of the product</p>
-            <input type="text" class="form-control" id="name" [formControlName]="productProperty.name" name="name">
+            <input type="text" class="form-control" id="name"
+                   [formControlName]="productProperty.name"  name="name">
 
             <br> <p>Type of the product </p>
             <input type="text" class="form-control" id="type" [formControlName]="productProperty.type" name="type">
 
             <br> <p>Expiring date </p>
-            <input type="text" class="form-control" id="expiring_date" [formControlName]="productProperty.expiring_date" name="expiring_date">
+            <input type="text" class="form-control" id="expiring_date" [formControlName]="productProperty.expiringDate" name="expiring_date">
 
             <br> <p>Price </p>
             <input type="text" class="form-control" id="price" [formControlName]="productProperty.price" name="price">
 
             <br> <br> <div class="form-group">
-            <button class="btn btn-success">Add new product</button> </div>
+            <button type="submit" class="btn btn-success">Add new product</button> </div>
           </div>
       </div>
     </div>

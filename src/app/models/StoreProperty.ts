@@ -4,7 +4,7 @@ export enum StoreProperty {
   email = 'email',
   password = 'password',
   address = 'address',
-  phone_number = 'phone_number',
+  phoneNumber = 'phoneNumber',
   city = 'city',
-  registration_id = 'registration_id',
+  registrationId = 'registrationId',
 }
