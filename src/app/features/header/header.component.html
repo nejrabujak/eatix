@@ -7,9 +7,9 @@
       <li><a routerLink="/about" routerLinkActive="active"><span itemprop="name">About us</span></a></li>
       <li><a routerLink="/contact" routerLinkActive="active"><span itemprop="name">Contact us</span></a></li>
 
-      <li><a routerLink="/admin" routerLinkActive="active"><span itemprop="name">Info stores</span></a></li>
-      <li><a routerLink="/admin-user" routerLinkActive="active"><span itemprop="name">Info users</span></a></li>
-      <li><a routerLink="/store" routerLinkActive="active"><span itemprop="name">Info</span></a></li>
+      <li><a [routerLink]="[route.STORES + route.EMPTY]"><span itemprop="name">Info stores</span></a></li>
+      <li><a [routerLink]="[route.USERS + route.EMPTY]"><span itemprop="name">Info users</span></a></li>
+      <li><a [routerLink]="[route.PRODUCTS + route.EMPTY]"><span itemprop="name">Info products</span></a></li>
 
 
     </ul>

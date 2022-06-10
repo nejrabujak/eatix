@@ -7,8 +7,7 @@ import {environment} from '../../environments/environment';
 @Injectable()
 export class ProductService {
 
-  private readonly baseUrl: string = `${environment.backendUrl}/product`;
-  httpClient: any;
+  private readonly baseUrl: string = `${environment.backendUrl}/products`;
 
   constructor(private http:HttpClient) {
   }

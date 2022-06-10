@@ -1,12 +1,13 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Product} from '../models/product';
 import {ProductProperty} from "../models/ProductProperty";
+import {Route} from "../constaints/route.constants";
 
 
 @Component({
   selector: 'app-store-user',
-  templateUrl: './store_user.html',
-  styleUrls: ['./store_user.css']
+  templateUrl: './store-user.component.html',
+  styleUrls: ['./store-user.component.css']
 })
 export class StoreUserComponent {
   @Input()
@@ -15,7 +16,7 @@ export class StoreUserComponent {
   @Output()
   removeProduct: EventEmitter<Product> = new EventEmitter<Product>()
 
-  public removeAllowed: boolean = false;
+  public route = Route;
 
   public remove(product: Product): void {
     this.removeProduct.emit(product);

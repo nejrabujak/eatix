@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous">
-<form [formGroup]="form" (ngSubmit)="submit()" xmlns="http://www.w3.org/1999/html">
+<form [formGroup]="form" (ngSubmit)="submit()" >
 
 <div class="readersack">
   <div class="container">
@@ -23,7 +23,7 @@
             <input type="text" class="form-control" id="price" [formControlName]="productProperty.price" name="price">
 
             <br> <br> <div class="form-group">
-            <button type="submit" class="btn btn-success">Add new product</button> </div>
+            <button (click)="submit()" class="btn btn-success">Add new product</button> </div>
           </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Product} from '../models/product';
+import {Product} from '../../models/product';
 import {FormBuilder, FormGroup} from '@angular/forms';
-import {ProductProperty} from '../models/ProductProperty';
+import {ProductProperty} from '../../models/ProductProperty';
 
 @Component({
   selector: 'app-new-product',
@@ -11,14 +11,13 @@ import {ProductProperty} from '../models/ProductProperty';
 export class NewProductComponent implements OnInit {
 
   @Output()
-  saveProduct: EventEmitter<Product> = new EventEmitter<Product>();
+  public saveProduct: EventEmitter<Product> = new EventEmitter<Product>();
 
   @Input()
   product: Product | undefined;
 
   public form!: FormGroup;
   public productProperty = ProductProperty;
-  public isEditable: boolean = true;
 
   constructor(
     private formBuilder: FormBuilder,
