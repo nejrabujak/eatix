@@ -1,0 +1,47 @@
+<ng-container *ngIf="stores && stores.length > 0; else emptyList">
+  <table class="tablehead">
+    <mat-icon class="head">ID</mat-icon>
+    <mat-icon class="head">Name</mat-icon>
+    <mat-icon class="head">Email</mat-icon>
+    <mat-icon class="head">Address</mat-icon>
+    <mat-icon class="head">City</mat-icon>
+    <mat-icon class="head">Phone number</mat-icon>
+    <mat-icon class="head">Registration ID</mat-icon>
+    <mat-icon class="head h">Action</mat-icon>
+  </table>
+  <div class="container" *ngFor="let store of stores">
+    <table class="table table-bordered table-striped" style="border-bottom: 2px solid darkgreen">
+
+      <mat-icon class="r">{{getStoreId(store)}}</mat-icon>
+
+      <mat-icon class="r">{{getStoreName(store)}}</mat-icon>
+
+      <mat-icon class="r">{{getStoreEmail(store)}}</mat-icon>
+
+      <mat-icon class="r">{{getStoreAddress(store)}}</mat-icon>
+
+      <mat-icon class="r">{{getStoreCity(store)}}</mat-icon>
+
+      <mat-icon class="r">{{getStorePhoneNumber(store)}}</mat-icon>
+
+      <mat-icon class="r">{{getStoreRegistrationID(store)}}</mat-icon>
+
+
+      <button mat-button color="warn"
+              type="button"
+              class="remove-button"
+              (click)="remove(store)">Delete</button>
+
+    </table>
+
+
+
+  </div>
+</ng-container>
+
+
+<ng-template #emptyList>
+  <div>
+    <h3>There are no stores.</h3>
+  </div>
+</ng-template>

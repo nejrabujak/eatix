@@ -1,15 +1,15 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {User} from "../models/user";
-import {UserProperty} from "../models/UserProperty";
+import {User} from "../../models/user";
+import {UserProperty} from "../../models/UserProperty";
 
 
 
 @Component({
   selector: 'app-admin-user',
-  templateUrl: './admin-user.component.html',
+  templateUrl: './admin-profile-user-list.component.html',
   styleUrls: ['./admin.component.css']
 })
-export class AdminUserComponent {
+export class AdminProfileUserListComponent {
   @Input()
   users: User[] | null = [];
 

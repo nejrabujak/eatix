@@ -1,0 +1,48 @@
+<ng-container *ngIf="products && products.length > 0; else emptyList">
+  <table class="tablehead">
+  <mat-icon class="head">ID</mat-icon>
+  <mat-icon class="head">Name</mat-icon>
+  <mat-icon class="head">Type</mat-icon>
+  <mat-icon class="head">Date</mat-icon>
+  <mat-icon class="head">Price</mat-icon>
+  <mat-icon class="head h">Action</mat-icon>
+  </table>
+  <div class="container" *ngFor="let product of products">
+    <table class="table table-bordered table-striped" style="border-bottom: 2px solid darkgreen">
+
+        <mat-icon class="r">{{getProductId(product)}}</mat-icon>
+
+        <mat-icon class="r">{{getProductName(product)}}</mat-icon>
+
+        <mat-icon class="r">{{getProductType(product)}}</mat-icon>
+
+      <mat-icon class="r">{{getProductExpiringDate(product)}}</mat-icon>
+
+
+      <mat-icon class="r">{{getProductPrice(product)}}</mat-icon>
+
+
+        <button mat-button color="warn"
+                          type="button"
+                          class="remove-button"
+                          (click)="remove(product)">Delete</button>
+
+    </table>
+
+
+
+  </div>
+</ng-container>
+
+<ng-template #emptyList>
+  <div>
+    <h3>There are no items.</h3>
+  </div>
+
+</ng-template>
+
+<button mat-flat-button
+        class="addItem"
+        [routerLink]="[route.SEPARATOR +route.PRODUCTS + route.SEPARATOR+ route.ADD]">
+  Add new product
+</button>
