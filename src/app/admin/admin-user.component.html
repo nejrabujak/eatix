@@ -21,8 +21,8 @@
         <td><span><mat-icon>{{getUserAddress(user)}}</mat-icon> {{user.address}}</span></td>
         <td><span><mat-icon>{{getUserCity(user)}}</mat-icon> {{user.city}}</span></td>
         <td><span><button mat-button color="warn"
+                          type="button"
                           class="remove-button"
-                          *ngIf="removeAllowed"
                           (click)="remove(user)">Delete</button></span></td>
 
       </tr>

@@ -5,30 +5,30 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {PageNotFound} from './page_not_found/page_not_found';
+import {PageNotFound} from './page-not-found/page-not-found.component';
 import {MatButtonModule} from '@angular/material/button';
-import {Contact_us} from './contact_us/contact_us';
-import {AboutusComponent} from './aboutus/aboutus.component';
+import {ContactUsComponent} from './contact-us/contact-us.component';
+import {AboutUsComponent} from './about-us/about-us.component';
 import {MainComponent} from './main/main.component';
-import {HeaderComponent} from "./header/header.component";
+import {HeaderComponent} from "./features/header/header.component";
 import {AppRoutingModule} from "./app-routing.module";
-import {FooterComponent} from "./footer/footer.component";
-import {TypeComponent} from "./product_types/type.component";
+import {FooterComponent} from "./features/footer/footer.component";
+import {TypeComponent} from "./product-types/type.component";
 import {HomepageComponent} from "./homepage/homepage.component";
 import {ProductComponent} from "./product/product.component";
-import {StoreUserComponent} from "./store_user/store_user";
+import {StoreUserComponent} from "./store-user/store-user.component";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {ProductService} from "./services/product.service"
 import {HttpClientModule} from "@angular/common/http";
 import {MatTableModule} from "@angular/material/table";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
-import {NewProductComponent} from "./new-product/new-product.component";
+import {NewProductComponent} from "./features/new-product/new-product.component";
 import {MatIconModule} from "@angular/material/icon";
-import {AdminComponent} from "./admin/admin";
+import {AdminComponent} from "./admin/admin.component";
 import {UserService} from "./services/user.service";
 import {StoreService} from "./services/store.service";
-import {AdminUserComponent} from "./admin/admin-user";
+import {AdminUserComponent} from "./admin/admin-user.component";
 import {LoginComponent} from "./login/login.component";
 import {AuthService} from "./services/auth.service";
 import {AuthorizedGuard} from "./guards/authorized.guard";
@@ -43,11 +43,11 @@ import {UserListContainerComponent} from "./containers/user-list-container/user-
   declarations: [
     AppComponent,
     PageNotFound,
-    Contact_us,
+    ContactUsComponent,
     HeaderComponent,
     FooterComponent,
     TypeComponent,
-    AboutusComponent,
+    AboutUsComponent,
     HomepageComponent,
     MainComponent,
     ProductComponent,

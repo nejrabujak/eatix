@@ -6,8 +6,8 @@ import {UserProperty} from "../models/UserProperty";
 
 @Component({
   selector: 'app-admin-user',
-  templateUrl: './admin-user.html',
-  styleUrls: ['./admin.css']
+  templateUrl: './admin-user.component.html',
+  styleUrls: ['./admin.component.css']
 })
 export class AdminUserComponent {
   @Input()
@@ -16,7 +16,6 @@ export class AdminUserComponent {
   @Output()
   removeUser: EventEmitter<User> = new EventEmitter<User>()
 
-  public removeAllowed: boolean = false;
 
 public remove(user: User): void {
   this.removeUser.emit(user);

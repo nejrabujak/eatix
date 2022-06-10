@@ -19,8 +19,8 @@
       <td><span><mat-icon>{{getProductExpiringDate(product)}}</mat-icon> {{product.expiringDate}}</span></td>
       <td><span><mat-icon>{{getProductPrice(product)}}</mat-icon> {{product.price}}</span></td>
       <td><span><button mat-button color="warn"
+                        type="button"
                         class="remove-button"
-                        *ngIf="removeAllowed"
                         (click)="remove(product)">Delete</button></span></td>
 
     </tr>
@@ -28,11 +28,11 @@
   </table>
       <hr/>
 
-    <button mat-flat-button type="button"
-            class="addItem"
-            routerLink="/products" routerLinkActive="active">
-      Add new product
-    </button>
+  <button mat-flat-button
+          class="addItem"
+          [routerLink]="[route.PRODUCTS + route.SEPARATOR + route.ADD]">
+    Add new product
+  </button>
 
 </div>
 </ng-container>
@@ -41,9 +41,9 @@
   <div>
     <h3>There are no items.</h3>
   </div>
-  <button mat-flat-button type="button"
+  <button mat-flat-button
           class="addItem"
-          routerLink="/products" routerLinkActive="active">
+          [routerLink]="[route.SEPARATOR +route.PRODUCTS + route.SEPARATOR+ route.ADD]">
     Add new product
   </button>
 </ng-template>
