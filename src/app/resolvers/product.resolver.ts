@@ -3,7 +3,7 @@ import {ActivatedRouteSnapshot, Resolve, RouterStateSnapshot} from '@angular/rou
 import {Observable} from 'rxjs';
 import {Product} from "../models/product";
 import {ProductService} from "../services/product.service";
-import {Route} from "../constaints/route.constants";
+import {Route} from "../constants/route.constants";
 
 
 @Injectable()

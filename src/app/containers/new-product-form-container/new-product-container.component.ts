@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {ActivatedRoute, Router} from "@angular/router";
-import {ResolverResponse} from "../../constaints/resolver-response.constaints";
-import {Route} from "../../constaints/route.constants";
+import {ResolverResponse} from "../../constants/resolver-response.constaints";
+import {Route} from "../../constants/route.constants";
 import {Product} from "../../models/product";
 import {ProductService} from "../../services/product.service";
 import {ProductProperty} from "../../models/ProductProperty";

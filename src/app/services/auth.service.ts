@@ -5,7 +5,7 @@ import {environment} from '../../environments/environment';
 import {SignInForm} from '../models/auth/sign-in-interface';
 import {AuthResponse} from '../models/auth/auth-response.interface';
 import {Router} from '@angular/router';
-import {Route} from '../constaints/route.constants';
+import {Route} from '../constants/route.constants';
 
 @Injectable()
 export class AuthService {

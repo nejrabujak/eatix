@@ -1,16 +1,16 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {Store} from "../models/store";
-import {StoreProperty} from "../models/StoreProperty";
+import {Store} from "../../models/store";
+import {StoreProperty} from "../../models/StoreProperty";
 
 
 
 
 @Component({
   selector: 'app-admin',
-  templateUrl: './admin.component.html',
+  templateUrl: './admin-profile-store-list.component.html',
   styleUrls: ['./admin.component.css']
 })
-export class AdminComponent {
+export class AdminProfileStoreListComponent {
   @Input()
   stores: Store[] | null = [];
 

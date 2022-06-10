@@ -1,15 +1,15 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {Product} from '../models/product';
-import {ProductProperty} from "../models/ProductProperty";
-import {Route} from "../constaints/route.constants";
+import {Product} from '../../models/product';
+import {ProductProperty} from "../../models/ProductProperty";
+import {Route} from "../../constants/route.constants";
 
 
 @Component({
   selector: 'app-store-user',
-  templateUrl: './store-user.component.html',
-  styleUrls: ['./store-user.component.css']
+  templateUrl: './store-user-product-list.component.html',
+  styleUrls: ['./store-user-product-list.component.css']
 })
-export class StoreUserComponent {
+export class StoreUserProductListComponent {
   @Input()
   products: Product[] | null = [];
 

@@ -1,0 +1,40 @@
+<ng-container *ngIf="users && users.length > 0; else emptyList">
+  <table class="tablehead">
+    <mat-icon class="head">ID</mat-icon>
+    <mat-icon class="head">Name</mat-icon>
+    <mat-icon class="head">Surname</mat-icon>
+    <mat-icon class="head">Email</mat-icon>
+    <mat-icon class="head">Address</mat-icon>
+    <mat-icon class="head">City</mat-icon>
+    <mat-icon class="head h">Action</mat-icon>
+  </table>
+  <div class="container" *ngFor="let user of users">
+    <table class="table table-bordered table-striped" style="border-bottom: 2px solid darkgreen">
+
+      <mat-icon class="r">{{getUserId(user)}}</mat-icon>
+
+      <mat-icon class="r">{{getUserName(user)}}</mat-icon>
+
+      <mat-icon class="r">{{getUserSurname(user)}}</mat-icon>
+
+      <mat-icon class="r">{{getUserEmail(user)}}</mat-icon>
+
+      <mat-icon class="r">{{getUserAddress(user)}}</mat-icon>
+
+      <mat-icon class="r">{{getUserCity(user)}}</mat-icon>
+
+      <button mat-button color="warn"
+              type="button"
+              class="remove-button"
+              (click)="remove(user)">Delete</button>
+
+    </table>
+  </div>
+</ng-container>
+
+
+<ng-template #emptyList>
+  <div>
+    <h3>There are no users.</h3>
+  </div>
+</ng-template>
