@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Route} from "../../constants/route.constants";
 
 @Component({
   selector: 'app-login',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-  title = 'login';
+  public route = Route;
 }

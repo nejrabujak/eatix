@@ -3,6 +3,9 @@ import {Subject} from 'rxjs';
 import {Store} from "../../models/store";
 import {StoreProperty} from "../../models/StoreProperty";
 import {StoreService} from "../../services/store.service";
+import {Product} from "../../models/product";
+import {ProductService} from "../../services/product.service";
+import {ProductProperty} from "../../models/ProductProperty";
 
 
 
@@ -34,6 +37,4 @@ export class StoreListContainerComponent implements OnInit {
       this.stores.next(stores);
     });
   }
-
-
 }

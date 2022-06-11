@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+<form [formGroup]="form" (ngSubmit)="submit()" >
+
+<div class="readersack">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <br><br> <h3>Sign up as user</h3>
+
+          <div class="form-group">
+            <p>Name</p>
+            <input type="text" class="form-control" id="name"
+                   [formControlName]="userProperty.name"  name="name">
+            <p>Surname</p>
+            <input type="text" class="form-control" id="surname"
+                   [formControlName]="userProperty.surname"  name="surname">
+
+            <p>Email</p>
+            <input type="text" class="form-control" id="email"
+                   [formControlName]="userProperty.email"  name="email">
+
+            <br> <p>Password </p>
+            <input type="text" class="form-control" id="password" [formControlName]="userProperty.password" name="password">
+
+            <br> <p>Confirm Password </p>
+            <input type="text" class="form-control" id="confirm password" [formControlName]="userProperty.confirmPassword" name="confirm password">
+
+            <br> <p>Address </p>
+            <input type="text" class="form-control" id="address" [formControlName]="userProperty.address" name="address">
+
+            <br> <p>City </p>
+            <input type="text" class="form-control" id="city" [formControlName]="userProperty.city" name="city">
+
+            <br> <br> <div class="form-group">
+            <button (click)="submit()" class="btn btn-success" [disabled]="!form.valid">Submit</button> </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</form>

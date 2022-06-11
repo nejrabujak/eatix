@@ -2,11 +2,8 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Store} from "../../models/store";
 import {StoreProperty} from "../../models/StoreProperty";
 
-
-
-
 @Component({
-  selector: 'app-admin',
+  selector: 'app-admin-store-list',
   templateUrl: './admin-profile-store-list.component.html',
   styleUrls: ['./admin.component.css']
 })
@@ -52,4 +49,3 @@ export class AdminProfileStoreListComponent {
   }
 
 }
-

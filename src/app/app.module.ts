@@ -37,6 +37,10 @@ import {NewProductContainerComponent} from "./containers/new-product-form-contai
 import {ProductListContainerComponent} from "./containers/product-list-container/product-list-container.component";
 import {StoreListContainerComponent} from "./containers/store-list-container/store-list-container.component";
 import {UserListContainerComponent} from "./containers/user-list-container/user-list-container.component";
+import {SignUpStoreComponent} from "./features/sign-up-store/sign-up-store.component";
+import {SignUpStoreContainerComponent} from "./containers/sign-up-store-container/sign-up-store-container.component";
+import {SignUpUserComponent} from "./features/sign-up-user/sign-up-user.component";
+import {SignUpUserContainerComponent} from "./containers/sign-up-user-container/sign-up-user-container.component";
 
 
 @NgModule({
@@ -56,6 +60,10 @@ import {UserListContainerComponent} from "./containers/user-list-container/user-
     AdminProfileStoreListComponent,
     AdminProfileUserListComponent,
     LoginComponent,
+    SignUpStoreComponent,
+    SignUpUserComponent,
+    SignUpUserContainerComponent,
+    SignUpStoreContainerComponent,
     NewProductContainerComponent,
     ProductListContainerComponent,
     StoreListContainerComponent,
