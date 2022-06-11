@@ -7,8 +7,7 @@ import {environment} from '../../environments/environment';
 @Injectable()
 export class StoreService {
 
-  private readonly baseUrl: string = `${environment.backendUrl}/store`;
-  httpClient: any;
+  private readonly baseUrl: string = `${environment.backendUrl}/stores`;
 
   constructor(private http:HttpClient) {
   }
@@ -28,6 +27,10 @@ export class StoreService {
 
   public delete(id:string): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/${id}`);
+  }
+
+  public update(id:string, store:Store): Observable<Store> {
+    return this.http.put<Store>(`${this.baseUrl}/${id}`, store);
   }
 
 }

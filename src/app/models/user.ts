@@ -6,6 +6,7 @@ export class User{
   [UserProperty.surname]: string;
   [UserProperty.email]: string
   [UserProperty.password]: string;
+  [UserProperty.confirmPassword]: string;
   [UserProperty.address]: string;
   [UserProperty.city]: string;
 

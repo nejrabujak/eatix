@@ -4,6 +4,7 @@ export enum UserProperty {
   surname = 'surname',
   email = 'email',
   password = 'password',
+  confirmPassword = 'confirmPassword',
   address = 'address',
   city = 'city',
 }

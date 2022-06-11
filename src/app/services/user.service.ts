@@ -7,8 +7,7 @@ import {User} from "../models/user";
 @Injectable()
 export class UserService {
 
-  private readonly baseUrl: string = `${environment.backendUrl}/user`;
-  httpClient: any;
+  private readonly baseUrl: string = `${environment.backendUrl}/users`;
 
   constructor(private http:HttpClient) {
   }
@@ -16,7 +15,6 @@ export class UserService {
   public getUsers(): Observable<User[]> {
     return this.http.get<User[]>(this.baseUrl);
   }
-
 
   public getUser(id:string): Observable<User> {
     return this.http.get<User>(`${this.baseUrl}/${id}`);
@@ -30,4 +28,7 @@ export class UserService {
     return this.http.delete<void>(`${this.baseUrl}/${id}`);
   }
 
+  public update(id:string, user:User): Observable<User> {
+    return this.http.put<User>(`${this.baseUrl}/${id}`, user);
+  }
 }
