@@ -10,7 +10,7 @@ Admins can view all information about stores or users and delete it
 Stores can view all of the products they have posted and delete them
 
 
-## Applications Used:
+## Applications Used
 
 This project was generated with:
 
