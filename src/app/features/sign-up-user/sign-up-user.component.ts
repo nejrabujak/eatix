@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {User} from "../../models/user";
 import {UserProperty} from "../../models/UserProperty";
+import {Route} from "../../constants/route.constants";
 
 
 
@@ -20,6 +21,7 @@ export class SignUpUserComponent implements OnInit {
 
   public form!: FormGroup;
   public userProperty = UserProperty;
+  public route = Route;
 
   constructor(
     private formBuilder: FormBuilder,

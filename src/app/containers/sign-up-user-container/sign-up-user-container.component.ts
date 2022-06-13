@@ -39,7 +39,7 @@ export class SignUpUserContainerComponent implements OnInit {
       });
     } else {
     this.userService.create(user).subscribe(() => {
-      this.router.navigate([Route.USERS]);
+      this.router.navigate([Route.LOGIN]);
     });
   }
     }

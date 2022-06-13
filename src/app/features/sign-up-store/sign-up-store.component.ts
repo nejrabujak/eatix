@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Store} from "../../models/store";
 import {StoreProperty} from "../../models/StoreProperty";
+import {Route} from "../../constants/route.constants";
 
 
 @Component({
@@ -19,6 +20,8 @@ export class SignUpStoreComponent implements OnInit {
 
   public form!: FormGroup;
   public storeProperty = StoreProperty;
+  public route = Route;
+
 
   constructor(
     private formBuilder: FormBuilder,

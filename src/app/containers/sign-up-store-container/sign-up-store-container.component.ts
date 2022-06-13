@@ -38,7 +38,7 @@ export class SignUpStoreContainerComponent implements OnInit {
       });
     } else {
     this.storeService.create(store).subscribe(() => {
-      this.router.navigate([Route.STORES]);
+      this.router.navigate([Route.LOGIN]);
     });
   }
     }

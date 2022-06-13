@@ -1,6 +1,6 @@
 <ng-container *ngIf="stores && stores.length > 0; else emptyList">
   <table class="tablehead">
-    <mat-icon class="head">ID</mat-icon>
+    <mat-icon class="head id">ID</mat-icon>
     <mat-icon class="head">Name</mat-icon>
     <mat-icon class="head">Email</mat-icon>
     <mat-icon class="head">Address</mat-icon>
@@ -12,7 +12,7 @@
   <div class="container" *ngFor="let store of stores">
     <table class="table table-bordered table-striped" style="border-bottom: 2px solid darkgreen">
 
-      <mat-icon class="r">{{getStoreId(store)}}</mat-icon>
+      <mat-icon class="r" id="id">{{getStoreId(store)}}</mat-icon>
 
       <mat-icon class="r">{{getStoreName(store)}}</mat-icon>
 
