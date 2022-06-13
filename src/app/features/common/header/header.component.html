@@ -1,18 +1,19 @@
-<body>
+<header>
+  <div class="separator">
+    <nav>
+      <h2 class="logo">Eat<span>ix</span></h2>
+      <ul>
+        <li><a routerLink="/homepage" routerLinkActive="active"><span itemprop="name">Homepage</span></a></li>
+        <li><a routerLink="/about" routerLinkActive="active"><span itemprop="name">About us</span></a></li>
+        <li><a routerLink="/contact" routerLinkActive="active"><span itemprop="name">Contact us</span></a></li>
 
+        <li><a [routerLink]="[route.STORES + route.EMPTY]"><span itemprop="name">Info stores</span></a></li>
+        <li><a [routerLink]="[route.USERS + route.EMPTY]"><span itemprop="name">Info users</span></a></li>
+        <li><a [routerLink]="[route.PRODUCTS + route.EMPTY]"><span itemprop="name">Info products</span></a></li>
+      </ul>
 
-<div class="hero">
-  <div class="content">
-    <div class="eatix">
-      <img src="https://i.imgur.com/pEGG5Ou.png">
-      <h3>An application that helps prevent food waste</h3>
-    </div>
-    <div class="newslatter">
-      <a class="btn" [routerLink]="[route.USERS + route.SEPARATOR + route.ADD]"> Sign up as user</a>
-      <a class="btn" [routerLink]="[route.STORES + route.SEPARATOR + route.ADD]"> Sign up as store</a>
+      <a class="btn" routerLink="/login" routerLinkActive="active"> Sign in</a>
 
-    </div>
-  </div>
-</div>
-</body>
-<router-outlet></router-outlet>
+    </nav>
+</header>
+        <router-outlet></router-outlet>
