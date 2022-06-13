@@ -1,34 +1,50 @@
-body {
-  background-image: url("https://i.pinimg.com/736x/29/cd/b7/29cdb7dd542263b3def50c0652127593.jpg");
-  background-size:cover;
-  background-position:center;
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+*{
+  font-family: 'Open Sans Condensed', sans-serif;
+
+  font-weight:bold;
+  margin: 0;
+  padding: 0;
 }
 .full {
   margin: 0 auto;
   width: 1100px;
-
 }
 
+a{
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:20px;
+}
+
+img{
+  width:200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
 main div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 section {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-left:10px;
+  margin-right:10px;
   display: flex;
   flex-direction: column;
-  background-color: darkgreen;
-  color: white;
+  background-color: white;
+  color: #3CB371;
   width: 33%;
-  height: 400px;
+  height: 380px;
   border-radius: 4px;
   box-sizing: border-box;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 main h3 {
   text-align: center;
   padding: 10px;
+  padding-bottom:20px;
 }
 main section img{
   width: 100%;
@@ -40,9 +56,12 @@ main section img{
 main section div {
   padding: 20px 10px;
 }
-main section .href {
-  font-style: italic;
-  text-decoration: none;
-  color: darkgreen;
-  font-weight: bold;
-}
+
+section:hover {
+  color:white;
+  background-color:#3CB371;
+  border: 1px solid #3CB371;
+  cursor:pointer;
+  border-radius:2px;
+  transition:.5s;}
+
