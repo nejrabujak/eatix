@@ -1,26 +1,50 @@
-.about{
-  width:100%;
-  padding:100px 0;
-  background-color:lightgreen;
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+*{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:bold;
+  margin: 0;
+  padding: 0;
+}
 
+h1{
+  color:darkgreen;
+  font-size:60px;
+  text-align:center;
 }
-.about img{
-  height:auto;
-  width:430px;
 
-}
-.about-text{
-  width:550px;
-}
-span{
+p {
+  margin-left:335px;
   color:black;
+  font-size:20px;
+  text-align:center;
+}
+.logo{
+  color:#3c5148;
+  letter-spacing: 2px;
+  font-size:50px;
+  letter-spacing:1px;
+  cursor:pointer;
+  letter-spacing:2px;
+  margin-bottom:25px;
+}
+
+
+.about{
+  width:98%;
+  margin-left:14px;
+  padding-top:50px;
+  background:white;
+
+}
+
+span{
+  color:darkgrey;
 
 }
 
 .main{
   width:1130px;
   max-width:95%;
-  margin:0 auto;
   display:flex;
   align-items:center;
   justify-content:space-around;
@@ -32,41 +56,57 @@ span{
   font-size:75px;
   text-transform:capitalize;
   margin-bottom:20px;
+  margin-left:30px;
 }
 
 .about-text h5{
-  color:white;
+  color:darkgrey;
   letter-spacing:2px;
-  font-size:22px;
+  font-size:26px;
   margin-bottom:25px;
   text-transform:capitalize;
 }
 
 about-text{
   color:darkgreen;
-  letter-spacing:1px;
+  letter-spacing:2px;
   line-height:28px;
   font-size:18px;
   margin-bottom:45px;
-
-
 }
 
-button{
-  background-color:darkgreen;
+
+.button{
+  background-color:#3CB371;
   color:white;
   text-decoration:none;
-  border:2px solid transparent;
+  letter-spacing:2px;
+  border: 1px solid white;
   font-weight:bold;
-  padding:13px 30px;
-  border-radius:30px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:50px;
+  padding-left:50px;
+  border-radius:3px;
   transition: .4s;
-
-
+  margin-top:30px;
+  margin-bottom:30px;
+  margin-left:638px;
+  font-size:20px;
 }
-button:hover{
-  background-color:transparent;
-  border: 2px solid darkgreen;
+
+img{
+  width:128.5%;
+  margin-bottom:-310px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover{
+  color:#3CB371;
+  background-color:white;
+  border: 1px solid #3CB371;
   cursor:pointer;
-  color:darkgreen
+  border-radius:2px;
+
 }
+

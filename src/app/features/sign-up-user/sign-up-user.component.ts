@@ -28,16 +28,37 @@ export class SignUpUserComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       [UserProperty.id]: [this.user?.[UserProperty.id] || ''],
-      [UserProperty.name]: [this.user?.[UserProperty.name] || ''],
-      [UserProperty.surname]: [this.user?.[UserProperty.surname] || ''],
-      [UserProperty.email]: [this.user?.[UserProperty.email] || ''],
-      [UserProperty.password]: [this.user?.[UserProperty.password] || ''],
-      [UserProperty.confirmPassword]: [this.user?.[UserProperty.confirmPassword] || ''],
-      [UserProperty.address]: [this.user?.[UserProperty.address] || ''],
-      [UserProperty.city]: [this.user?.[UserProperty.city] || ''],
+      [UserProperty.name]: [this.user?.[UserProperty.name], [
+          Validators.required,
+          Validators.minLength(3),
+          Validators.maxLength(30)]],
+
+      [UserProperty.surname]: [this.user?.[UserProperty.surname],[
+        Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(30)]],
+
+      [UserProperty.email]: [this.user?.[UserProperty.email] ,[
+        Validators.required,
+        Validators.email,
+        Validators.minLength(3),
+        Validators.maxLength(20)]],
+
+      [UserProperty.password]: [this.user?.[UserProperty.password],[
+        Validators.required,
+        Validators.minLength(8)]],
+
+      [UserProperty.address]: [this.user?.[UserProperty.address],  [
+        Validators.required,
+        Validators.minLength(9),
+        Validators.maxLength(12)]],
+
+      [UserProperty.city]: [this.user?.[UserProperty.city], [
+        Validators.required,
+        Validators.minLength(4),
+        Validators.maxLength(20)]],
     });
   }
-
 
   public submit(): void {
     console.log(123);

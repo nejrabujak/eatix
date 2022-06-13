@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Product} from '../../models/product';
-import {FormBuilder, FormGroup} from '@angular/forms';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {ProductProperty} from '../../models/ProductProperty';
 
 @Component({
@@ -26,10 +26,25 @@ export class NewProductComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       [ProductProperty.id]: [this.product?.[ProductProperty.id] || ''],
-      [ProductProperty.name]: [this.product?.[ProductProperty.name] || ''],
-      [ProductProperty.type]: [this.product?.[ProductProperty.type] || ''],
-      [ProductProperty.expiringDate]: [this.product?.[ProductProperty.expiringDate] || ''],
-      [ProductProperty.price]: [this.product?.[ProductProperty.price] || ''],
+      [ProductProperty.name]: [this.product?.[ProductProperty.name],[
+        Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(20)]],
+
+      [ProductProperty.type]: [this.product?.[ProductProperty.type],[
+        Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(20)]],
+
+      [ProductProperty.expiringDate]: [this.product?.[ProductProperty.expiringDate],[
+        Validators.required,
+        Validators.minLength(10),
+        Validators.maxLength(11)]],
+
+      [ProductProperty.price]: [this.product?.[ProductProperty.price],[
+        Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(6)]],
 
     });
   }

@@ -22,19 +22,30 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.fb.group({
-      email: [null, [Validators.required]],
-      password: [null, [Validators.required]]
+      email: ['', {
+        validators:
+          [Validators.required,
+           Validators.email,
+           Validators.minLength(3),
+           Validators.maxLength(20)],
+      updateOn: 'blur'}],
+      password: ['', [
+        Validators.required,
+        Validators.minLength(8)]]
     });
   }
+
 
   handleFormSubmit() {
     this.form!.markAllAsTouched();
 
     if (this.form!.valid) {
       this.authService.logIn({ ...this.form!.value }).subscribe(() => {
-        this.router.navigate([Route.PRODUCTS]);
+        this.router.navigate([Route.HOMEPAGE]);
       });
     }
+
   }
+
 
 }

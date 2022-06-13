@@ -10,20 +10,26 @@
 
           <div class="form-group">
             <p>Name of the product</p>
-            <input type="text" class="form-control" id="name"
-                   [formControlName]="productProperty.name"  name="name">
+            <input type="name" class="form-control" id="name"
+                   [formControlName]="productProperty.name"  name="name"
+                   required minlength="3" maxlength="20">
 
             <br> <p>Type of the product </p>
-            <input type="text" class="form-control" id="type" [formControlName]="productProperty.type" name="type">
+            <input type="type" class="form-control" id="type"
+                   [formControlName]="productProperty.type" name="type"
+                   required minlength="3" maxlength="20">
 
             <br> <p>Expiring date </p>
-            <input type="text" class="form-control" id="expiring_date" [formControlName]="productProperty.expiringDate" name="expiring_date">
+            <input type="expiring_date" class="form-control" id="expiring_date"
+                   [formControlName]="productProperty.expiringDate" name="expiring_date"
+                   required minlength="10" maxlength="11">
 
             <br> <p>Price </p>
-            <input type="text" class="form-control" id="price" [formControlName]="productProperty.price" name="price">
-
+            <input matInput type="price" class="form-control" id="price"
+                   [formControlName]="productProperty.price" name="price"
+                   required minlength="3" maxlength="6">
             <br> <br> <div class="form-group">
-            <button (click)="submit()" class="btn btn-success">Add new product</button> </div>
+            <button (click)="submit()" class="btn btn-success" [disabled]="!form.valid">Add new product</button> </div>
           </div>
       </div>
     </div>

@@ -3,10 +3,15 @@
 <div class="sign-in-form">
   <h1>Please sign in</h1>
   <form (submit)="handleFormSubmit()" [formGroup]="form!">
-    <input type="text" class="input-box" placeholder="email">
-    <input type="password" class="input-box" placeholder="password">
+    <input matInput type="email" class="input-box" placeholder="email"
+           required minlength="3" maxlength="20">
 
-    <button type="button" class="sign-btn" type="submit">Sign in</button>
+
+    <input matInput type="password" class="input-box" placeholder="password"
+           required minlength="8">
+
+    <div>
+    <button type="button" class="sign-btn" routerLink="/homepage">Sign in</button></div>
   </form>
 </div>
   </div>

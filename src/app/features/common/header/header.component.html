@@ -1,21 +1,22 @@
 <header>
+  <div class="separator">
+    <nav>
+      <h2 class="logo">Eat<span>ix</span></h2>
+      <ul>
+        <li><a routerLink="/homepage" routerLinkActive="active"><span itemprop="name">Homepage</span></a></li>
+        <li><a routerLink="/about" routerLinkActive="active"><span itemprop="name">About us</span></a></li>
+        <li><a routerLink="/contact" routerLinkActive="active"><span itemprop="name">Contact us</span></a></li>
 
-  <nav>
-    <h2 class="logo">Eat<span>ix</span></h2>
-    <ul>
-      <li><a routerLink="/homepage" routerLinkActive="active"><span itemprop="name">Homepage</span></a></li>
-      <li><a routerLink="/about" routerLinkActive="active"><span itemprop="name">About us</span></a></li>
-      <li><a routerLink="/contact" routerLinkActive="active"><span itemprop="name">Contact us</span></a></li>
-
-      <li><a [routerLink]="[route.STORES + route.EMPTY]"><span itemprop="name">Info stores</span></a></li>
-      <li><a [routerLink]="[route.USERS + route.EMPTY]"><span itemprop="name">Info users</span></a></li>
-      <li><a [routerLink]="[route.PRODUCTS + route.EMPTY]"><span itemprop="name">Info products</span></a></li>
+        <li><a [routerLink]="[route.STORES + route.EMPTY]"><span itemprop="name">Info stores</span></a></li>
+        <li><a [routerLink]="[route.USERS + route.EMPTY]"><span itemprop="name">Info users</span></a></li>
+        <li><a [routerLink]="[route.PRODUCTS + route.EMPTY]"><span itemprop="name">Info products</span></a></li>
 
 
-    </ul>
+      </ul>
 
-    <a class="btn" routerLink="/login" routerLinkActive="active"> Sign in</a>
-  </nav>
+      <a class="btn" routerLink="/login" routerLinkActive="active"> Sign in</a>
 
+    </nav>
+  </div>
 </header>
 <router-outlet></router-outlet>
