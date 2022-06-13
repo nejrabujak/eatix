@@ -1,27 +1,45 @@
-# Application
+# EatIx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+## Description
 
-## Development server
+EatIx is an web application with an aim of preventing food waste
+Users can register and view information about EatIx as well as all of the products posted by the stores
+You can register as a normal User or as a Store
+App is not created to sell products but just to showcase them
+Admins can view all information about stores or users and delete it 
+Stores can view all of the products they have posted and delete them
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Applications Used:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project was generated with:
+
+Angular CLI version 13.2.6
+JDK 17
+Java Spring Boot framework version 2.7.0.
+Dependencies: Spring Web and Lombok
+IDE used for this project was IntelliJ IDEA.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How To Run
 
-## Running unit tests
+Clone or Download the repository from: https://github.com/nejrabujak/eatix
+run cd eatix-main/src/app
+run npm install
+run ng serve
+go to localhost:4200
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Future Implementations
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Enable mobile view and responsiveness
+Add newsletter tab
+Add Support Page
 
-## Further help
+## Help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+If there are issues with the code, contact:
+nejra.bujak@stu.ssst.edu.ba
+amila.dervisevic@stu.ssst.edu.ba
+maida.filipovic@stu.ssst.edu.ba
