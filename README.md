@@ -5,6 +5,7 @@
 EatIx is an web application with an aim of preventing food waste  
   
 - Users can register and view information about EatIx as well as all of the products posted by the stores  
+- The app has environmental variables  
 - You can register as a normal User or as a Store  
 - App is not created to sell products but just to showcase them  
 - Admins can view all information about stores or users and delete it   
