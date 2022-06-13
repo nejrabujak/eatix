@@ -1,4 +1,4 @@
-# EatIx
+# EatIx Frontend
 
 ## Description
 
@@ -20,8 +20,6 @@ This project was generated with:
 - Java Spring Boot framework version 2.7.0.  
 - Dependencies: Spring Web and Lombok  
 - IDE used for this project was IntelliJ IDEA.  
-
-## Build
 
 ## How To Run
 
