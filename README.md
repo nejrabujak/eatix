@@ -17,9 +17,6 @@ EatIx is an web application with an aim of preventing food waste
 This project was generated with:  
   
 - Angular CLI version 13.2.6  
-- JDK 17  
-- Java Spring Boot framework version 2.7.0.  
-- Dependencies: Spring Web and Lombok  
 - IDE used for this project was IntelliJ IDEA.  
 
 ## How To Run
