@@ -18,8 +18,13 @@ table .r{
   margin-left: 50px;
 }
 .tablehead{
-  background-color: darkgreen;
+  margin-left: 100px;
+  margin-top: 80px;
+  background-color: #3CB371;
   color: white;
+}
+.table{
+  margin-left: 100px;
 }
  .head{
   padding: 10px;

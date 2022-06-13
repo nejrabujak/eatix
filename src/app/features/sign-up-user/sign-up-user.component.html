@@ -40,7 +40,10 @@
                    required minlength="4" maxlength="20">
 
             <br> <br> <div class="form-group">
-            <button (click)="submit()" class="btn btn-success">Submit</button> </div>
+            <button (click)="submit()"
+                    class="btn btn-success"
+                    routerLink="/login" routerLinkActive="active"
+                    [disabled]="!form.valid">Submit</button> </div>
           </div>
       </div>
     </div>

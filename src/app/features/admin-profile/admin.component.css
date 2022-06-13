@@ -15,22 +15,34 @@ table .btn{
 
 table .r{
   padding: 10px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 .tablehead{
-  background-color: darkgreen;
+  margin-left: 100px;
+  margin-top: 80px;
+  background-color: #3CB371;
   color: white;
+}
+.table{
+  margin-left: 100px;
 }
 .head{
   padding: 10px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
+
 .h{
   margin-right: 50px;
+}
+.id{
+  margin-left: 60px;
+}
+#id{
+  margin-left: 60px;
 }
 
 button{
   background-color: red;
   color: white;
-  margin-left: 60px;
+  margin-left: 100px;
 }
