@@ -1,41 +1,55 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous">
-<form [formGroup]="form" (ngSubmit)="submit()" >
+<form [formGroup]="form" (ngSubmit)="submit()" name="myForm" >
 
 <div class="readersack">
   <div class="container">
-    <div class="row">
       <div class="col-md-6 offset-md-3">
         <br><br> <h3>Sign up as store</h3>
 
-          <div class="form-group">
+          <span class="form-group">
             <p>Name of the store</p>
-            <input type="text" class="form-control" id="name"
-                   [formControlName]="storeProperty.name"  name="name">
+            <input matInput type="name" class="form-control" id="name"
+                   [formControlName]="storeProperty.name" name="name"
+                   required minlength="3" maxlength="20">
+
+            <br> <p>Email </p>
+            <input matInput type="email" class="form-control" id="email"
+                   [formControlName]="storeProperty.email" name="email"
+                   required email minlength="3" maxlength="20">
+
 
             <br> <p>Password </p>
-            <input type="text" class="form-control" id="password" [formControlName]="storeProperty.password" name="password">
-
-            <br> <p>Confirm Password </p>
-            <input type="text" class="form-control" id="confirm password" [formControlName]="storeProperty.confirmPassword" name="confirm password">
+            <input matInput type="password" class="form-control input-box" id="password"
+                   [formControlName]="storeProperty.password" name="password"
+                   required minlength="8">
 
             <br> <p>Address </p>
-            <input type="text" class="form-control" id="address" [formControlName]="storeProperty.address" name="address">
+            <input matInput type="address" class="form-control" id="address"
+                   [formControlName]="storeProperty.address" name="address"
+                   required minlength="5">
 
             <br> <p>Phone number </p>
-            <input type="text" class="form-control" id="phone number" [formControlName]="storeProperty.phoneNumber" name="phone number">
+            <input matInput type="phone number" class="form-control" id="phone number"
+                   [formControlName]="storeProperty.phoneNumber" name="phone number"
+                   required minlength="9" maxlength="12">
 
             <br> <p>City </p>
-            <input type="text" class="form-control" id="city" [formControlName]="storeProperty.city" name="city">
+            <input type="city" class="form-control" id="city"
+                   [formControlName]="storeProperty.city" name="city"
+                   required minlength="4" maxlength="20">
 
             <br> <p>Registration ID </p>
-            <input type="text" class="form-control" id="registration id" [formControlName]="storeProperty.registrationId" name="registration id">
+            <input matInput type="registration id" class="form-control" id="registration id"
+                   [formControlName]="storeProperty.registrationId" name="registration id"
+                   required minlength="5" maxlength="20">
 
             <br> <br> <div class="form-group">
-            <button (click)="submit()" class="btn btn-success" [disabled]="!form.valid">Submit</button> </div>
-          </div>
+            <button (click)="submit()" class="btn btn-success"
+                    [disabled]="!form.valid"
+                    routerLink="/login">Submit</button> </div>
+          </span>
       </div>
     </div>
   </div>
-</div>
-</form>
+  </form>

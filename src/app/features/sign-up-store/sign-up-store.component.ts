@@ -27,14 +27,39 @@ export class SignUpStoreComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       [StoreProperty.id]: [this.store?.[StoreProperty.id] || ''],
-      [StoreProperty.name]: [this.store?.[StoreProperty.name] || ''],
-      [StoreProperty.email]: [this.store?.[StoreProperty.email] || ''],
-      [StoreProperty.password]: [this.store?.[StoreProperty.password] || ''],
-      [StoreProperty.confirmPassword]: [this.store?.[StoreProperty.confirmPassword] || ''],
-      [StoreProperty.address]: [this.store?.[StoreProperty.address] || ''],
-      [StoreProperty.phoneNumber]: [this.store?.[StoreProperty.phoneNumber] || ''],
-      [StoreProperty.city]: [this.store?.[StoreProperty.city] || ''],
-      [StoreProperty.registrationId]: [this.store?.[StoreProperty.registrationId] || ''],
+      [StoreProperty.name]: [this.store?.[StoreProperty.name], [
+        Validators.required,
+        Validators.minLength(3),
+        Validators.maxLength(30)]],
+
+      [StoreProperty.email]: [this.store?.[StoreProperty.email],[
+              Validators.required,
+              Validators.email,
+              Validators.minLength(3),
+              Validators.maxLength(20)]],
+
+      [StoreProperty.password]: [this.store?.[StoreProperty.password], [
+        Validators.required,
+        Validators.minLength(8)]],
+
+      [StoreProperty.address]: [this.store?.[StoreProperty.address], [
+        Validators.required,
+        Validators.minLength(5)]],
+
+      [StoreProperty.phoneNumber]: [this.store?.[StoreProperty.phoneNumber], [
+        Validators.required,
+        Validators.minLength(9),
+        Validators.maxLength(12)]],
+
+      [StoreProperty.city]: [this.store?.[StoreProperty.city],[
+        Validators.required,
+        Validators.minLength(4),
+        Validators.maxLength(20)]],
+
+      [StoreProperty.registrationId]: [this.store?.[StoreProperty.registrationId],[
+        Validators.required,
+        Validators.minLength(5),
+        Validators.maxLength(20)]]
     });
   }
 

@@ -1,85 +1,114 @@
-* {
-  margin: 0;
-  padding: 0;
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+*{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:bold;
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
 }
 
+hr{
+  width:70%;
+  margin:auto;
+  border-radius:2px;
+  background-color:	#3CB371;
+  border:none;
+  height:1px;
+  margin-bottom:40px;
+}
+
+
+p{
+  margin-bottom:15px;
+
+}
 .service{
-background:lightgreen;
-width:100%;
-padding:100px 0px;
+  background:white;
+  margin-left:14px;
+  width:98%;
+  padding-top:15px;
+  letter-spacing:4px;
+
 }
 
 .title h2{
-color:white;
-font-size:75px;
-width:1130px;
-margin:30px auto;
-text-align:center;
-}
+  color:#3CB371;
+
+  font-weight:normal;
+  font-size:70px;
+  margin-bottom:30px;
+  text-align:center;}
 
 .box{
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:400px;
-
+  display:flex;
+  justify-content:center;
 }
-.card{
-height:365px;
-width:336px;
-padding:20px 35px;
-background:green;
-border-radius:20px;
-margin:15px;
-position:relative;
-overflow:hidden;
-text-align:center;
 
+.card{
+  height:auto;
+  width:auto;
+  background-color:white;
+  padding-bottom:40px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius:3px;
+  margin-top:10px;
+  margin-left:15px;
+  margin-right:15px;
+  position:relative;
+  overflow:hidden;
+  text-align:center;
 }
 
 
 h3{
-color:white;
-font-size:33px;
-margin-bottom:15px;
+  color:#3CB371;
+  font-size:33px;
+  margin-bottom:10px;
 
+}
+
+img {
+  margin-top:15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom:20px;
 }
 
 .pra p{
-color:white;
-font-size:16px;
-line-height:27px;
-margin-bottom:25px;
+  color:#3CB371;
+  font-size:16px;
+  line-height:27px;
+  margin-bottom:25px;
 
 
 }
 
-.card .button{
-background-color:lightgreen;
-color:white;
-text-decoration:none;
-border: 2px solid transparent;
-font-weight:bold;
-padding:9px 22px;
-border-radius:30px;
-transition: .4s;
-
-
+.button{
+  background-color:white;
+  color:#3CB371;
+  text-decoration:none;
+  border: 1px solid #3CB371;
+  font-weight:bold;
+  padding:9px 22px;
+  border-radius:3px;
+  transition: .4s;
 
 }
 
-.card .button:hover{
-background-color:transparent;
-border: 2px solid lightgreen;
-cursor:pointer;
+.button:hover{
+  color:white;
+  background-color:#3CB371;
+  border: 1px solid white;
+  cursor:pointer;
+  border-radius:2px;
 
 }
 
 .map{
-
-margin-left:460px;
-
-
+  margin-left:280px;
+  margin-bottom:30px;
 }
 
 span{

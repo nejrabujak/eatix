@@ -3,7 +3,6 @@ export enum StoreProperty {
   name = 'name',
   email = 'email',
   password = 'password',
-  confirmPassword = 'confirmPassword',
   address = 'address',
   phoneNumber = 'phoneNumber',
   city = 'city',

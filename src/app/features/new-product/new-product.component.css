@@ -1,41 +1,59 @@
 .main{
-
-width:500px;
-text-align:center;
-margin: 0 auto;
-border: 2px solid #00FF00;
-margin-top:20px;
-font-family:sans-serif;
+  width:70%;
+  text-align:center;
+  border: 2px solid #00FF00;
+  margin-top:20px;
+  font-family:sans-serif;
 }
 
 h1{
 
-text-align:center;
-background-color: lightgreen;
-padding: 30px 0px;
-margin-top:0px;
+  text-align:center;
+  background-color: #3CB371;
+  padding: 30px 0px;
+  margin-top:0px;
 
 }
 
 .addItem{
 
-position:relative;
-padding-bottom: 0px;
-height: 300px;
+  position:relative;
+  padding-bottom: 0px;
+  height: 300px;
 
 }
 
 .addText{
 
-width:80%;
-height:35px;
+  width:80%;
+  height:35px;
 
 }
 
-button btn{
-
-height:35px;
-width:60px;
+.btn{
+  background-color:#3CB371;
+  color:white;
+  text-decoration:none;
+  border: 1px solid #3CB371;
+  font-weight:bold;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:35px;
+  padding-left:35px;
+  border-radius:3px;
+  transition: .4s;
+  margin-left:160px;
 }
 
+.btn:hover{
+  color:#3CB371;
+  background-color:white;
+  border: 1px solid #3CB371;
+  cursor:pointer;
+  border-radius:2px;
+
+}
+
+.readersack{
+  margin-bottom:-100px;}
 

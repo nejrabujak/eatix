@@ -1,31 +1,33 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 *{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight:bold;
   padding:0;
   margin:0;
-  font-family: 'Josefin Sans',  sans-serif;
   box-sizing:border-box;
-
 }
+
+
 .hero{
-  height: 80vh;
-  width:100%;
-  background-image: url("https://i.pinimg.com/736x/29/cd/b7/29cdb7dd542263b3def50c0652127593.jpg");
-  background-size:cover;
-  background-position:center;
-}
-
-div #sign-in{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 20px;
-  padding-top: 50px;
+  background-color:#FFF;
+  width:98%;
+  margin-left:14px;
+  padding-top:100px;
+  padding-left:360px;
+  padding-bottom:300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display:flex;
+  border-top:1px solid white;
+  letter-spacing:2px;
+  margin-bottom:-400px;
 }
 
 .sign-in-form {
-  width: 350px;
+  width: 700px;
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
-  background: lightgreen;
-  padding: 20px;
-  margin: auto 0;
+  background: white;
+  padding: 50px;
+  margin: auto;
   text-align: center;
 }
 
@@ -33,13 +35,13 @@ div #sign-in{
   margin-bottom: 5px;
 }
 
-.sign-in-form .sign-btn {
+.sign-in-form {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .sign-in-form h1 {
-  color: darkgreen;
+  color:#3c5148;
   margin-bottom: 30px;
 }
 
@@ -50,19 +52,29 @@ div #sign-in{
   border: 1px solid #999;
   outline: none;
   text-align: center;
-  border-radius: 20px;
-}
-.sign-in-form button {
-  background: darkgreen;
-  color: white;
-  width: 30%;
-  height: 50px;
-  border-radius: 20px;
-  font-size: 17px;
-  margin: 10px 0;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  text-align: center;
+  border-radius: 2px;
 }
 
+.sign-btn{
+  background-color:white;
+  color:#3CB371;
+  text-decoration:none;
+  border: 1px solid #3CB371;
+  font-weight:bold;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:50px;
+  padding-left:50px;
+  border-radius:3px;
+  transition: .4s;
+  margin-top:20px;
+}
+
+.sign-btn:hover{
+  color:white;
+  background-color:#3CB371;
+  border: 1px solid white;
+  cursor:pointer;
+  border-radius:2px;
+
+}

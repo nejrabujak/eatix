@@ -10,30 +10,37 @@
 
           <div class="form-group">
             <p>Name</p>
-            <input type="text" class="form-control" id="name"
-                   [formControlName]="userProperty.name"  name="name">
+            <input matInput type="name" class="form-control" id="name"
+                   [formControlName]="userProperty.name" name="name"
+                   required minlength="3" maxlength="20">
+
             <p>Surname</p>
-            <input type="text" class="form-control" id="surname"
-                   [formControlName]="userProperty.surname"  name="surname">
+            <input matInput type="surname" class="form-control" id="surname"
+                   [formControlName]="userProperty.surname" name="surname"
+                   required minlength="3" maxlength="20">
 
             <p>Email</p>
-            <input type="text" class="form-control" id="email"
-                   [formControlName]="userProperty.email"  name="email">
+            <input matInput type="email" class="form-control" id="email"
+                   [formControlName]="userProperty.email" name="email"
+                   required email minlength="3" maxlength="20">
 
             <br> <p>Password </p>
-            <input type="text" class="form-control" id="password" [formControlName]="userProperty.password" name="password">
-
-            <br> <p>Confirm Password </p>
-            <input type="text" class="form-control" id="confirm password" [formControlName]="userProperty.confirmPassword" name="confirm password">
+            <input matInput type="password" class="form-control input-box" id="password"
+                   [formControlName]="userProperty.password" name="password"
+                   required minlength="8">
 
             <br> <p>Address </p>
-            <input type="text" class="form-control" id="address" [formControlName]="userProperty.address" name="address">
+            <input matInput type="address" class="form-control" id="address"
+                   [formControlName]="userProperty.address" name="address"
+                   required minlength="5">
 
             <br> <p>City </p>
-            <input type="text" class="form-control" id="city" [formControlName]="userProperty.city" name="city">
+            <input type="city" class="form-control" id="city"
+                   [formControlName]="userProperty.city" name="city"
+                   required minlength="4" maxlength="20">
 
             <br> <br> <div class="form-group">
-            <button (click)="submit()" class="btn btn-success" [disabled]="!form.valid">Submit</button> </div>
+            <button (click)="submit()" class="btn btn-success">Submit</button> </div>
           </div>
       </div>
     </div>

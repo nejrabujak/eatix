@@ -9,5 +9,6 @@ export class Route {
   public static USERS = 'users';
   public static STORES = 'stores';
   public static LOGIN = 'login';
+  public static HOMEPAGE = 'homepage';
 
 }
