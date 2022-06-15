@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {mergeMap, Observable, of} from 'rxjs';
-import {environment} from '../../environments/environment.prod';
+import {environment} from '../../environments/environment';
 import {SignInForm} from '../models/auth/sign-in-interface';
 import {AuthResponse} from '../models/auth/auth-response.interface';
 import {Router} from '@angular/router';
