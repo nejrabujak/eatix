@@ -26,6 +26,7 @@ This project was generated with:
 - run npm install  
 - run ng serve  
 - go to localhost:4200  
+- can also be seen at: https://eatix.netlify.app/
 
 
 ## Future Implementations
